@@ -1,0 +1,17 @@
+<template name='message'>
+    <li class='message'>
+        <div class='message-box'>
+            <div class="message-head">
+                <!--Message head contains user profile picture and info text-->
+                <img class='profile-pic' src="{{displayPicture}}" />
+                <small class='text-muted message-data'><strong class="message-username">{{username}}</strong> | {{createdAt}} </small>
+            </div>
+    
+            <div class='message-body'>
+                <p class='message-text'>
+                    {{{message}}}
+                </p>
+            </div>
+        </div>
+    </li>
+</template>
